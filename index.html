@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./fivicon-calculadora.png" type="image/x-icon">
     <meta name="description"
         content="Usando esta calculadora você pode calcular facilmente quanto pagar de gorjeta bem como o valor total da conta quando dividir os custos entre outras pessoas.">
     <link rel="stylesheet" href="style.css">
@@ -23,17 +24,17 @@
             <form class="tipsForm" id="tipsForm" action="">
                 <label for="bill">Quanto ficou a conta?</label>
                 <p>
-                    R$ <input type="number" placeholder="100,00"  min="0" name="bill" id="bill" class="formInput" required>
+                    R$ <input type="number" placeholder="100,00" step="any" min="0" name="bill" id="bill" class="formInput" required>
                 </p>
                 <label for="serviceQual">Como foi o seu serviço?</label>
                 <p>
                     <select name="serviceQual" id="serviceQual" class="formSelect" required>
                         <option disabled selected>--Escolha uma opção</option>
-                        <option value="0.30">30% - Incrível</option>
-                        <option value="0.20">20% - Bom</option>
-                        <option value="0.15">15% - Aceitável</option>
-                        <option value="0.10">10% - Ruim</option>
-                        <option value="0.05">5% - Péssimo</option>
+                        <option value="0.20">20% - Incrível</option>
+                        <option value="0.15">15% - Bom</option>
+                        <option value="0.10">10% - Aceitável</option>
+                        <option value="0.05">5% - Ruim</option>
+                        <option value="0.02">2% - Péssimo</option>
                     </select>
                 </p>
                 <label for="people">

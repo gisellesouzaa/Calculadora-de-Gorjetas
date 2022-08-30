@@ -1,11 +1,13 @@
 :root {
-    --primary-color: lightcoral;
-    --secondary-solor: DimGrey;
-    --tertiary-color:gainsboro;
+    --primary-color: #CEE5D0;
+    --secondary-solor: #190f3e;
+    --tertiary-color:#FFC090;
+    --background-container: #FCF8E8;
+
 }
 
 body{
-    background-color: lightcoral;
+    background-color: var(--primary-color);
     font-size: 15px;
     font-family: 'Lato', sans-serif;
 
@@ -15,7 +17,7 @@ body{
     height: 525px;
     width: 368px;
     margin: 100px auto;
-    background-color: #f7f7f7;
+    background-color: var(--background-container);
     box-shadow: 5px 5px 5px gray;
     border-radius: 20px;
 }
@@ -26,7 +28,6 @@ body{
     padding: 20px;
     text-transform: uppercase;
     font-size: 18px;
-    font-weight: normal;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     text-align: center;
@@ -44,8 +45,8 @@ body{
     border-radius: 5px;
 }
 
-.formInput:focus{
-    border: 3px solid var(--primary-color);
+.formInput:focus, .formSelect:focus{
+    border: 3px solid var(--tertiary-color);
     outline: none;
 }
 
@@ -54,7 +55,6 @@ body{
     padding: 8px 5px;
     font-size: 13px;
     border-radius: 5px;
-    
 }
 
 .formSubmit{
@@ -62,14 +62,20 @@ body{
     font-weight: bold;
     display: block;
     margin: 30px auto;
-    background: var(--primary-color);
-    border-radius: 5px;
+    background: var(--tertiary-color);
+    border-radius: 10px;
     width: 200px;
     height: 50px;
     font-size: 17px;
-    color: #fff;
+    color: var(--secondary-solor);
 }
 
+.formSubmit:hover{
+    color: #271501;
+    border: 1px solid #E38B29;
+    text-shadow: #fff 1px 1px 2px;
+    transition: 0.5s;
+}
 #totalTip {
     font-size: 20px;
     margin-top: 5px;
