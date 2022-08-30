@@ -40,7 +40,7 @@ body{
 .formInput {
     background: #fff;
     width: 60px;
-    padding: 5px 5px 8px 0px;
+    padding: 5px 0px 8px 15px;
     border-radius: 5px;
 }
 
@@ -68,4 +68,10 @@ body{
     height: 50px;
     font-size: 17px;
     color: #fff;
+}
+
+#totalTip {
+    font-size: 20px;
+    margin-top: 5px;
+    text-align: center;
 }
